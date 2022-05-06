@@ -1,0 +1,27 @@
+{
+  "TheFoo": {
+    "type": "table",
+    "value": {
+
+      "class": "AttributedFoo",
+
+      "Gun": {
+        "type": "integer",
+        "value": 3
+      },
+
+      "Ammo": {
+        "type": "table",
+        "value": {
+
+          "class": "Scope",
+
+          "FireBullets": {
+            "type": "integer",
+            "value": 5
+          }
+        }
+      }
+    }
+  }
+}

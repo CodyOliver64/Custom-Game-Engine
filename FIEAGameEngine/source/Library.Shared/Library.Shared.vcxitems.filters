@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Attributed.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Datum.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DefaultEquality.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DefaultHash.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameClock.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameTime.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IJsonParseHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)JsonParseCoordinator.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)JsonTableParseHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Scope.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Transform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TypeRegistry.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Action.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionIncrement.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionList.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionIf.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionCreateAction.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)WorldManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ActionDestroyAction.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)EventPublisher.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)EventQueue.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Attributed.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Datum.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DefaultEquality.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DefaultHash.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Factory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameClock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameTime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HashMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IJsonParseHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JsonParseCoordinator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)JsonTableParseHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RTTI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Scope.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Signature.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Transform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TypeRegistry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Vector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Action.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionIncrement.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionList.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionIf.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionCreateAction.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)WorldManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ActionDestroyAction.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventPublisher.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventSubscriber.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Event.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)EventQueue.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Datum.inl" />
+    <None Include="$(MSBuildThisFileDirectory)DefaultEquality.inl" />
+    <None Include="$(MSBuildThisFileDirectory)DefaultHash.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Factory.inl" />
+    <None Include="$(MSBuildThisFileDirectory)HashMap.inl" />
+    <None Include="$(MSBuildThisFileDirectory)SList.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Vector.inl" />
+    <None Include="$(MSBuildThisFileDirectory)Event.inl">
+      <Filter>Event</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Actions">
+      <UniqueIdentifier>{97b00ac3-56d1-4ece-884e-1a5e23f3272e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{7c293c80-e3a1-43a3-b8a3-8d4db11455ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

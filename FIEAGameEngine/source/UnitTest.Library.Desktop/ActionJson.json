@@ -1,0 +1,94 @@
+{
+  "Name": {
+    "type": "string",
+    "value": "Level1"
+  },
+
+
+  "Transform": {
+    "Position": {
+      "type": "vector",
+      "value": "vec4(10.0,20.0,30.0,40.0)"
+    },
+    "Rotation": {
+      "type": "vector",
+      "value": "vec4(40.0,30.0,20.0,10.0)"
+    },
+    "Scale": {
+      "type": "vector",
+      "value": "vec4(60.0,70.0,80.0,90.0)"
+    }
+  },
+
+  "Children": {
+    "type": "table",
+    "value": [
+      {
+        "class": "Hero",
+
+        "Name": {
+          "type": "string",
+          "value": "LittleMan"
+        },
+        "Health": {
+          "type": "integer",
+          "value": "75"
+        },
+        "Actions": {
+          "type": "table",
+          "value": [
+            {
+              "class": "ActionIf",
+
+              "Name": {
+                "type": "string",
+                "value": "A_IfDamageTaken"
+              },
+              "Condition": {
+                "type": "integer",
+                "value": "0" //0 = false
+              },
+              "Actions": {
+                "type": "table",
+                "value": [
+                  {
+                    "class": "ActionIncrement",
+
+                    "Name": {
+                      "type": "string",
+                      "value": "A_IncreaseHealth"
+                    },
+                    "Target": {
+                      "type": "string",
+                      "value": "Health"
+                    },
+                    "Step": {
+                      "type": "integer",
+                      "value": "5"
+                    }
+                  },
+                  {
+                    "class": "ActionIncrement",
+
+                    "Name": {
+                      "type": "string",
+                      "value": "A_DecreaseHealth"
+                    },
+                    "Target": {
+                      "type": "string",
+                      "value": "Health"
+                    },
+                    "Step": {
+                      "type": "integer",
+                      "value": "-5"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

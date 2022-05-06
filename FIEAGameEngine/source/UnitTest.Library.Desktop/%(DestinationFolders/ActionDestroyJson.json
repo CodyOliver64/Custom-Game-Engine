@@ -1,0 +1,48 @@
+{
+  "Children": {
+    "type": "table",
+    "value": [
+      {
+        "class": "Hero",
+
+        "Name": {
+          "type": "string",
+          "value": "LittleMan"
+        },
+        "Health": {
+          "type": "integer",
+          "value": "75"
+        },
+        "Actions": {
+          "type": "table",
+          "value": [
+            {
+              "class": "ActionDestroyAction",
+
+              "ActionToDelete": {
+                "type": "string",
+                "value": "A_IncrementHealth"
+              }
+            },
+            {
+              "class": "ActionIncrement",
+
+              "Name": {
+                "type": "string",
+                "value": "A_IncrementHealth"
+              },
+              "Target": {
+                "type": "string",
+                "value": "Health"
+              },
+              "Step": {
+                "type": "integer",
+                "value": "5"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

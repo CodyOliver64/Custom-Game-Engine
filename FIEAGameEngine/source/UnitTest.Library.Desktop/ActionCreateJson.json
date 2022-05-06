@@ -1,0 +1,70 @@
+{
+  "Actions": {
+    "type": "table",
+    "value": [
+      {
+        "class": "ActionList",
+
+        "Name": {
+          "type": "string",
+          "value": "BigAction"
+        }
+      },
+      {
+        "class": "ActionCreateAction",
+
+        "Prototype": {
+          "type": "string",
+          "value": "ActionList"
+        },
+        "ActionName": {
+          "type": "string",
+          "value": "A_Thing"
+        },
+        "TargetName": {
+          "type": "string",
+          "value": "BigAction"
+        }
+      }
+    ]
+  },
+
+  "Children": {
+    "type": "table",
+    "value": [
+      {
+        "class": "Hero",
+
+        "Name": {
+          "type": "string",
+          "value": "LittleMan"
+        },
+        "Health": {
+          "type": "integer",
+          "value": "75"
+        },
+        "Actions": {
+          "type": "table",
+          "value": [
+            {
+              "class": "ActionCreateAction",
+
+              "Prototype": {
+                "type": "string",
+                "value": "ActionIncrement"
+              },
+              "ActionName": {
+                "type": "string",
+                "value": "A_IncrementHealth"
+              },
+              "TargetName": {
+                "type": "string",
+                "value": "LittleMan"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

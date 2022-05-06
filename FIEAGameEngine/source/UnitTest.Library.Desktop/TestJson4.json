@@ -1,0 +1,27 @@
+{
+  "TheFoo": {
+    "type": "table",
+    "value": {
+
+      "class": "AttributedFoo",
+
+      "ExternalIntegerArray": {
+        "type": "integer",
+        "value": [ 11, 21, 31 ]
+      },
+
+      "Ammo": {
+        "type": "table",
+        "value": {
+
+          "class": "Scope",
+
+          "ZSelectedWeapon": {
+            "type": "integer",
+            "value": 5
+          }
+        }
+      }
+    }
+  }
+}
